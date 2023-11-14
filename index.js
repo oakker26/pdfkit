@@ -19,6 +19,7 @@ app.get("/generate-pdf", (req, res) => {
   res.setHeader("Content-Disposition", "inline; filename=example.pdf");
 
   // Create a new PDF document
+  
   const doc = new PDFDocument();
   const font = doc.font("fonts/mmrCensus.ttf");
 
